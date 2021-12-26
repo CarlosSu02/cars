@@ -100,10 +100,7 @@ section{
     background-attachment: fixed; */
 }
 
-
-
 /******************************/
-
 
 .titleImg{
     /* background-size: cover; */
@@ -114,7 +111,7 @@ section{
     position: relative;
     width: 400px;
     height: 200px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .card .face{
@@ -173,3 +170,15 @@ section{
 .card:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+
+footer{
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 48px 24px;
+    position: relative;
+}
+
+/* .page-footer .content-container{
+    margin: 0 auto;
+    max-width: 1400px;
+} */
