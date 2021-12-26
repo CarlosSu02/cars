@@ -74,7 +74,7 @@ function executeExample(emailInput){
       input: 'text',
       inputLabel: 'Your name',
       inputPlaceholder: 'Enter your name',
-      name: "name"
+      // name: "name"
     })
 
     const { value: email } = await Swal.fire({
@@ -82,7 +82,7 @@ function executeExample(emailInput){
       input: 'email',
       inputLabel: 'Your email address',
       inputPlaceholder: 'Enter your email address',
-      name: "email"
+      // name: "email"
     })
 
     const { value: comments } = await Swal.fire({
@@ -93,14 +93,16 @@ function executeExample(emailInput){
         'aria-label': 'Type your message here'
       },
       showCancelButton: true,
-      name: "text"
+      // name: "text",
+      confirmButtonText: "Enviar"
     })
      
     // Swal.fire(`Entered email: ${email} - ${name} - ${text}`);
+
     Swal.fire({
       
       html:
-      `<form action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
+      `<form style="display:none;" action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
       <!-- <input type="text" name="name" required>
         <input type="email" name="email" required>
         <br><br><textarea name="comments" rows="5" cols="50" placeholder="Mensaje" required></textarea>
@@ -110,11 +112,13 @@ function executeExample(emailInput){
         <input type="hidden" name="email" value="${email}">
         <input type="hidden" name="name" value="${name}">
         <input type="hidden" name="comments" value="${comments}">
-        <br><button type="submit">Send</button>
+        <br><button id="sE" type="submit">Send</button>
       </form>`
 
     });  
+
   })();
+  
   // Swal.fire({
     
   //   html:
