@@ -182,3 +182,38 @@ footer{
     margin: 0 auto;
     max-width: 1400px;
 } */
+
+.textBox{
+    width: 95%;
+    font-size: 17px;
+    margin: 10px;
+}
+
+.swal2-close:focus{
+    /* width: 450px !important; *//*este era del swal-wide*/
+    box-shadow: none !important;
+}
+
+
+.btn{
+    color: white;
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn.send{
+    background-color: #655CC9;
+}
+
+.btn.cancel{
+    background-color: #808080;
+}
+
+.btn:active{
+    transform: scale(.9);
+    border: 2px solid #4F4F4F;
+}

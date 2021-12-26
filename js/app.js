@@ -67,57 +67,57 @@ function executeExample(emailInput){
   //   Swal.fire(`Entered email: ${email}`)
   // }
 
-  (async () => {
+  // (async () => {
 
-    const { value: name } = await Swal.fire({
-      title: 'Input name',
-      input: 'text',
-      inputLabel: 'Your name',
-      inputPlaceholder: 'Enter your name',
-      // name: "name"
-    })
+  //   const { value: name } = await Swal.fire({
+  //     title: 'Input name',
+  //     input: 'text',
+  //     inputLabel: 'Your name',
+  //     inputPlaceholder: 'Enter your name',
+  //     // name: "name"
+  //   })
 
-    const { value: email } = await Swal.fire({
-      title: 'Input email address',
-      input: 'email',
-      inputLabel: 'Your email address',
-      inputPlaceholder: 'Enter your email address',
-      // name: "email"
-    })
+  //   const { value: email } = await Swal.fire({
+  //     title: 'Input email address',
+  //     input: 'email',
+  //     inputLabel: 'Your email address',
+  //     inputPlaceholder: 'Enter your email address',
+  //     // name: "email"
+  //   })
 
-    const { value: comments } = await Swal.fire({
-      input: 'textarea',
-      inputLabel: 'Message',
-      inputPlaceholder: 'Type your message here...',
-      inputAttributes: {
-        'aria-label': 'Type your message here'
-      },
-      showCancelButton: true,
-      // name: "text",
-      confirmButtonText: "Enviar"
-    })
+  //   const { value: comments } = await Swal.fire({
+  //     input: 'textarea',
+  //     inputLabel: 'Message',
+  //     inputPlaceholder: 'Type your message here...',
+  //     inputAttributes: {
+  //       'aria-label': 'Type your message here'
+  //     },
+  //     showCancelButton: true,
+  //     // name: "text",
+  //     confirmButtonText: "Enviar"
+  //   })
      
-    // Swal.fire(`Entered email: ${email} - ${name} - ${text}`);
+  //   // Swal.fire(`Entered email: ${email} - ${name} - ${text}`);
 
-    Swal.fire({
+  //   Swal.fire({
       
-      html:
-      `<form style="display:none;" action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
-      <!-- <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <br><br><textarea name="comments" rows="5" cols="50" placeholder="Mensaje" required></textarea>
-        <input type="text" name="name" value="${name}" required>
-        <input type="email" name="email" value="${email}" required>
-        <br><br><textarea value="${comments}" rows="5" cols="50" placeholder="Mensaje" required>${comments}</textarea> -->
-        <input type="hidden" name="email" value="${email}">
-        <input type="hidden" name="name" value="${name}">
-        <input type="hidden" name="comments" value="${comments}">
-        <br><button id="sE" type="submit">Send</button>
-      </form>`
+  //     html:
+  //     `<form style="display:none;" action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
+  //     <!-- <input type="text" name="name" required>
+  //       <input type="email" name="email" required>
+  //       <br><br><textarea name="comments" rows="5" cols="50" placeholder="Mensaje" required></textarea>
+  //       <input type="text" name="name" value="${name}" required>
+  //       <input type="email" name="email" value="${email}" required>
+  //       <br><br><textarea value="${comments}" rows="5" cols="50" placeholder="Mensaje" required>${comments}</textarea> -->
+  //       <input type="hidden" name="email" value="${email}">
+  //       <input type="hidden" name="name" value="${name}">
+  //       <input type="hidden" name="comments" value="${comments}">
+  //       <br><button id="sE" type="submit">Send</button>
+  //     </form>`
 
-    });  
+  //   });  
 
-  })();
+  // })();
   
   // Swal.fire({
     
@@ -149,5 +149,23 @@ function executeExample(emailInput){
   //   </form>`
 
   // });  
+  
 
+  Swal.fire({
+    // icon: "success",
+    html:
+    `<form id="contact" action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
+      <input autofocus id="n1" class="textBox" type="text" name="Nombre" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" required>
+      <input class="textBox" type="email" name="email" placeholder="Correo Electrónico" autofocus pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$" required>
+      <input class="textBox" type="text" name="Asunto" placeholder="Asunto" required>
+      <textarea class="textBox" name="Comentario" rows="5" cols="50" placeholder="Mensaje" pattern="^(\n|.){1,255}$" required></textarea>
+      <button class="btn send" type="submit">Enviar</button>
+      <button class="btn cancel" onclick="swal.close()">Cancelar</button>
+    </form>`,
+    showConfirmButton: false,
+    // showCancelButton: true,
+    // cancelButtonPosition: "left"
+    // showCloseButton: t/rue,
+  });  
+  
 }
