@@ -1,3 +1,5 @@
+// import swal from 'sweetalert2';
+// window.Swal = Swal;
 
 var cars = new Array( 
   {image: "./img/tarago1990.jpg", mark: "Toyota", model: "Tarago", year: "1990", version: "Microbus"},
@@ -52,7 +54,9 @@ function WriteCars(){
 
 WriteCars();
 
-function executeExample(emailInput){
+function contact(){
+
+  console.log("si");
 	
   // Swal.fire({title: "Hola!"});
 
