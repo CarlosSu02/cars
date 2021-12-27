@@ -1,5 +1,3 @@
-// import swal from 'sweetalert2';
-// window.Swal = Swal;
 
 var cars = new Array( 
   {image: "./img/tarago1990.jpg", mark: "Toyota", model: "Tarago", year: "1990", version: "Microbus"},
@@ -56,105 +54,6 @@ WriteCars();
 
 function contact(){
 
-  console.log("si");
-	
-  // Swal.fire({title: "Hola!"});
-
-  // const { value: email } = await Swal.fire({
-  //   title: 'Input email address',
-  //   input: 'email',
-  //   inputLabel: 'Your email address',
-  //   inputPlaceholder: 'Enter your email address'
-  // })
-  
-  // if (email) {
-  //   Swal.fire(`Entered email: ${email}`)
-  // }
-
-  // (async () => {
-
-  //   const { value: name } = await Swal.fire({
-  //     title: 'Input name',
-  //     input: 'text',
-  //     inputLabel: 'Your name',
-  //     inputPlaceholder: 'Enter your name',
-  //     // name: "name"
-  //   })
-
-  //   const { value: email } = await Swal.fire({
-  //     title: 'Input email address',
-  //     input: 'email',
-  //     inputLabel: 'Your email address',
-  //     inputPlaceholder: 'Enter your email address',
-  //     // name: "email"
-  //   })
-
-  //   const { value: comments } = await Swal.fire({
-  //     input: 'textarea',
-  //     inputLabel: 'Message',
-  //     inputPlaceholder: 'Type your message here...',
-  //     inputAttributes: {
-  //       'aria-label': 'Type your message here'
-  //     },
-  //     showCancelButton: true,
-  //     // name: "text",
-  //     confirmButtonText: "Enviar"
-  //   })
-     
-  //   // Swal.fire(`Entered email: ${email} - ${name} - ${text}`);
-
-  //   Swal.fire({
-      
-  //     html:
-  //     `<form style="display:none;" action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
-  //     <!-- <input type="text" name="name" required>
-  //       <input type="email" name="email" required>
-  //       <br><br><textarea name="comments" rows="5" cols="50" placeholder="Mensaje" required></textarea>
-  //       <input type="text" name="name" value="${name}" required>
-  //       <input type="email" name="email" value="${email}" required>
-  //       <br><br><textarea value="${comments}" rows="5" cols="50" placeholder="Mensaje" required>${comments}</textarea> -->
-  //       <input type="hidden" name="email" value="${email}">
-  //       <input type="hidden" name="name" value="${name}">
-  //       <input type="hidden" name="comments" value="${comments}">
-  //       <br><button id="sE" type="submit">Send</button>
-  //     </form>`
-
-  //   });  
-
-  // })();
-  
-  // Swal.fire({
-    
-  //   html:
-  //   `<label>Su nombre: <input type="text" autofocus placeholder="Nombre"><label>
-  //    <label>Su email: <input type="email" autofocus placeholder="Email"><label>
-  //    <textarea id="swal-input2" rows="10" cols="30" class="swal2-input" placeholder="Mensaje">`
-
-  // });
-
-  // var name = "Prueba1";
-  // var email = "saberparaque1@gmail.com";
-  // var comments = "prueba de correo 13";
-
-  // Swal.fire({
-    
-  //   html:
-  //   `<form action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
-  //   <!-- <input type="text" name="name" required>
-  //     <input type="email" name="email" required>
-  //     <br><br><textarea name="comments" rows="5" cols="50" placeholder="Mensaje" required></textarea>
-  //     <input type="text" name="name" value="${name}" required>
-  //     <input type="email" name="email" value="${email}" required>
-  //     <br><br><textarea value="${comments}" rows="5" cols="50" placeholder="Mensaje" required>${comments}</textarea> -->
-  //     <input name="email" value="${email}">
-  //     <input name="name" value="${name}">
-  //     <input name="comments" value="${comments}">
-  //     <br><button type="submit">Send</button>
-  //   </form>`
-
-  // });  
-  
-
   Swal.fire({
     // icon: "success",
     html:
@@ -164,7 +63,8 @@ function contact(){
       <input class="textBox" type="text" name="Asunto" placeholder="Asunto" required>
       <textarea class="textBox" name="Comentario" rows="5" cols="50" placeholder="Mensaje" pattern="^(\n|.){1,255}$" required></textarea>
       <button class="btn send" type="submit">Enviar</button>
-      <button class="btn cancel" onclick="swal.close()">Cancelar</button>
+      <input class="btn cancel" onclick="swal.close()" value="Cancelar">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">
     </form>`,
     showConfirmButton: false,
     // showCancelButton: true,
