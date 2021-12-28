@@ -214,7 +214,7 @@ section{
     /* padding: 10px 10px; */
 }
 
-.nav{
+.bar{
     /* position: fixed; */
     height: 50px; 
     width: 100%; 
@@ -224,6 +224,13 @@ section{
     position: relative;
     z-index: 10;
 
+    display: flex !important;
+    /* top: 0;  */
+
+    padding: 15px 20px;
+    /* background-color: rgb(25, 49, 1); */
+    justify-content: space-evenly;
+    list-style: none;
 }
 
 ul{

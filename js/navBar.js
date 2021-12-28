@@ -13,11 +13,11 @@ function posicionarMenu() {
 
     if ($(window).scrollTop() >= altura_del_header){
         // $('fixed')
-        $('ul').addClass('fixed');
+        $('.bar').addClass('fixed');
         // $('.wrapper').css('margin-top', (altura_del_menu) + 'px');
     } else {
         // $('#nav');
-        $('ul').removeClass('fixed');
+        $('.bar').removeClass('fixed');
         // $('.wrapper').css('margin-top', '0');
     }
 }
