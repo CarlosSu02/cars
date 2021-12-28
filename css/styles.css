@@ -116,24 +116,22 @@ header{
     flex-wrap: wrap;
 }
 
-ul{
+/* ul{
     display: flex !important;
 
     padding: 15px 20px;
     justify-content: space-evenly;
     list-style: none;
+} */
+
+.fixed{
+    position: fixed; 
+    top: 0;
 }
 
 a{
     color: white; 
     text-decoration: none;
-}
-
-
- 
-.fixed{
-    position: fixed; 
-    top: 0;
 }
 
 
