@@ -248,15 +248,15 @@ a{
     text-decoration: none;
 }
 
-.menu{ 
-    /* height:80px; 
+/* .menu{ 
+    height:80px; 
     width:100%; 
     background:#333; 
     color:white; 
     text-align:center;
     position: relative;
-    z-index: 10; */
-}
+    z-index: 10;
+} */
  
 .fixed{
     position: fixed; 
