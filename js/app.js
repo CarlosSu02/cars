@@ -65,7 +65,7 @@ function contactEmail(){
       <textarea class="textBox" name="Comentario" rows="5" cols="50" placeholder="Mensaje" pattern="^(\n|.){1,255}$" required></textarea>
       <button class="btn send" type="submit">Enviar</button>
       <input readonly class="btn cancel" onclick="swal.close()" value="Cancelar">
-      <1--<input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">-->
+      <!--<input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html">-->
       <input type="hidden" name="_next" value="https://carlossu02.github.io/cars/">
     </form>`,
     showConfirmButton: false,
