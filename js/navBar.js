@@ -1,5 +1,5 @@
 
-alert("Foter en prueba");
+// alert("Footer en prueba");
 
 posicionarMenu();
  
