@@ -52,7 +52,7 @@ function WriteCars(){
 
 WriteCars();
 
-function contact(){
+function contactEmail(){
 
   Swal.fire({
     // icon: "success",

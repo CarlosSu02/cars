@@ -194,7 +194,7 @@ header{
         margin: 70px 70px !important;
         /* right: 500px; */
     }
-    .btn.contact{
+    .btn.btn.contactEmail{
         /* position: absolute !important; */
         margin: 120px 70px !important;
         /* right: 500px; */
@@ -206,6 +206,54 @@ section{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    /************/
+    /* height:20px; 
+    width:100%;  */
+    /* padding-top:20px */
+    /* padding: 10px 10px; */
+}
+
+nav{
+    /* position: fixed; */
+    height: 50px; 
+    width: 100%; 
+    background: #333; 
+    color: white; 
+    /* text-align:center; */
+    position: relative;
+    z-index: 10;
+
+}
+
+ul{
+    display: flex;
+    /* top: 0;  */
+
+    padding: 15px 20px;
+    /* background-color: rgb(25, 49, 1); */
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+a{
+    color: white; 
+    text-decoration: none;
+}
+
+.menu{ 
+    /* height:80px; 
+    width:100%; 
+    background:#333; 
+    color:white; 
+    text-align:center;
+    position: relative;
+    z-index: 10; */
+}
+ 
+.fixed{
+    position: fixed; 
+    top:0;
 }
 
 /******************************/
@@ -302,6 +350,7 @@ footer{
     color: #fff;
     padding: 48px 24px;
     position: relative;
+    /* margin-top: 40px; */
 }
 
 /* .page-footer .content-container{
@@ -319,7 +368,6 @@ footer{
     /* width: 450px !important; *//*este era del swal-wide*/
     box-shadow: none !important;
 }
-
 
 .btn{
     color: white;
@@ -426,15 +474,18 @@ span{
     background-color: #0145B2;
     font-family: monospace;
     width: 200px;
-    /* padding: 10px 20px;        */
+    padding: 10px 20px;       
     /* padding: 15px 50px !important; */
     /* margin: 100px 20px; */
     position: absolute;
     margin: 70px 100px;
     /* right: 500px; */
+
+    text-decoration: none;
+    text-align: center;
 }
 
-.btn.contact{
+.btn.contactEmail{
     background-color: #0145B2;
     font-family: monospace;
     width: 200px;
