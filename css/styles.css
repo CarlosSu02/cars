@@ -92,28 +92,28 @@ header{
     }
 }
 
-.section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-
 .nav{
     height: 50px; 
     width: 100%; 
     background: #333; 
     color: white; 
+
     position: relative;
     z-index: 10;
 
     display: flex !important;
     /* top: 0;  */
 
-    padding: 15px 20px;
+    padding: 15px 20px !important;
     justify-content: space-evenly;
     list-style: none;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul{
@@ -133,11 +133,8 @@ a{
  
 .fixed{
     position: fixed; 
-    top:0;
+    top: 0;
 }
-
-
-
 
 
 .card {
@@ -361,8 +358,6 @@ span{
     /* width: auto; */
     height: 200px;
 }
-
-
 
 .info{
     display: block;
