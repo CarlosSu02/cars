@@ -145,13 +145,13 @@ header{
     span{
         /* display: flex;
         font-family: monospace; */
-        font-size: 31px !important;
+        font-size: 28px !important;
         /* white-space: nowrap;
         border-right: 4px solid; */
         width: 19.2ch !important;
         /* color: #fff; */
     
-        margin: 13px auto !important;
+        margin: 15px auto !important;
     
         /* animation: typing 2s steps(19), blink .5s infinite step-end alternate; 
         overflow: hidden; */
