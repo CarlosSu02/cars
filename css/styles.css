@@ -168,9 +168,31 @@ header{
     }
     .imgVader{
         /* display: inline-block; */
-        width: 320px !important;
+        width: 325px !important;
         height: 300px !important;
         margin: 15px !important;
+    }
+    .btn.data{
+        /* background-color: #0145B2;
+        font-family: monospace; */
+        /* width: 200px; */
+        /* padding: 10px 20px;        */
+        /* padding: 15px 50px !important; */
+        /* margin: 100px 20px; */
+        /* position: absolute; */
+        margin: 20px 70px !important;
+        /* right: 500px; */
+    }
+    .btn.data2{
+        /* background-color: #0145B2;
+        font-family: monospace;
+        width: 200px; */
+        /* padding: 10px 20px;        */
+        /* padding: 15px 50px !important; */
+        /* margin: 100px 20px; */
+        /* position: absolute; */
+        margin: 70px 70px !important;
+        /* right: 500px; */
     }
     .btn.contact{
         /* position: absolute !important; */
@@ -422,6 +444,11 @@ span{
     position: absolute;
     margin: 120px 100px;
     /* right: 500px; */
+}
+
+.imgContact{
+    /* width: auto; */
+    height: 200px;
 }
 
 /* p{
