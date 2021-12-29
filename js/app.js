@@ -56,6 +56,7 @@ function contactEmail(){
 
   Swal.fire({
     // icon: "success",
+    title: "Email",
     html:
     `<img class="imgContact" src="./img/others/email 512px.png">
     <form id="contact" action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
@@ -74,4 +75,19 @@ function contactEmail(){
     // showCloseButton: t/rue,
   });  
   
+}
+
+function otherContacts(){
+
+  Swal.fire({
+    title: "Otros Contactos",
+    html: `<div data-aos="zoom-in">
+           <a href="https://www.instagram.com/josuesu02/" target="_blank">
+           <img class="imgsOtherContacts" src="/img/others/instagram 4096px.png"></a>
+           <a href="https://github.com/CarlosSu02/" target="_blank">
+           <img class="imgsOtherContacts" src="/img/others/github 512px.png"></a>
+          </div>`,
+    confirmButtonText: "Aceptar"      
+  });
+
 }

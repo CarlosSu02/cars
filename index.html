@@ -23,8 +23,14 @@
         <div class="square2">
             <img class="imgVader" src="img/others/darthVader.png">
             <button class="btn data">Acerca de</button>
-            <button class="btn data2">Otros Contactos</button>
-            <button class="btn contactEmail" src="js/app.js" onclick="contactEmail()">Contacto - Email</button>
+            <!-- <button class="btn contactEmail" src="js/app.js" onclick="contactEmail()">Contacto - Email</button>
+            <button class="btn otherContacts" src="js/app.js" onclick="otherContacts()">Otros Contactos</button> -->
+        
+            <button class="btn contactEmail" onclick="contactEmail()">Contacto - Email</button>
+
+            <!-- <input src="favicon.png" class="btn contactEmail" onclick="contactEmail()" value="Contacto - Email"> -->
+            
+            <button class="btn otherContacts" onclick="otherContacts()">Otros Contactos</button>
         </div>
     </header>
    
@@ -32,7 +38,7 @@
         <div class="nav">
             <li><a href="#section1">Inicio</a></li>
             <li><a onclick="contactEmail()">Email</a></li>
-            <li><a href="">Otros Contactos</a></li>
+            <li><a onclick="otherContacts()">Otros Contactos</a></li>
         </div>
     </nav>   
 
