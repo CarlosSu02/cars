@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/navBar.js"></script>
+    <!-- <script src="js/navBar.js"></script> -->
     <title>Carros</title>
 </head>
 <body>
@@ -22,7 +24,21 @@
 
         <div class="square2">
             <img class="imgVader" src="img/others/darthVader.png">
-            <button class="btn data">Acerca de</button>
+            <audio id="audio" preload="auto"><source src="audio/Star Wars- Darth Vader -yo soy tu padre- - Efecto de sonido.mp3">
+                <!-- <script src="js/app.js">audioDarthVader()</script> -->
+            </audio>
+            <!-- <script>
+                var beepOne = $("#beep")[0];
+                $(".imgVader").mouseenter(function(){
+                    beepOne.play();
+                });
+                $(".imgVader").mouseleave(function(){
+                    beepOne.pause();
+                    // beepOne.currentTime = 0;
+                    // beepOne.load();
+                });
+            </script> -->
+            <button class="btn about" onclick="about()">Acerca de</button>
             <!-- <button class="btn contactEmail" src="js/app.js" onclick="contactEmail()">Contacto - Email</button>
             <button class="btn otherContacts" src="js/app.js" onclick="otherContacts()">Otros Contactos</button> -->
         

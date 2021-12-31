@@ -28,6 +28,10 @@ var cars = new Array(
   {image: "./img/cars/corolla2002s.png", mark: "Toyota", model: "Corolla", year: "2002", version: "S"}, 
   {image: "./img/cars/hardbody1993.jpg", mark: "Nissan", model: "Hardbody", year: "1993", version: "Normal"});
 
+/*
+ * Datos e imágenes de los carros. 
+*/
+
 function WriteCars(){
 
   cars.forEach(function(car){
@@ -51,6 +55,24 @@ function WriteCars(){
 }
 
 WriteCars();
+
+/*
+ * Acerca de, contactos y más. 
+*/
+
+function about(){
+
+  Swal.fire({
+    // title: "Otros Contactos",
+    html: `<p>Esta pequeña página ha sido desde 0 con con estructuras HTML, 
+              CSS e inserción de HTML con JavaScript para facilitar el ingreso
+              de los datos a las cartas, estas cartas contienen información
+              general sobre una serie de carros dichos carros contienen su
+              imagen de representación.</p>`,
+    confirmButtonText: "Aceptar"      
+  });
+
+}
 
 function contactEmail(){
 
@@ -90,4 +112,49 @@ function otherContacts(){
     confirmButtonText: "Aceptar"      
   });
 
+}
+
+/*
+ * Audio de Darth Vader. 
+*/
+
+function audioDarthVader(){
+  
+  var audioVader = $("#audio")[0];
+  
+  $(".imgVader").mouseenter(function(){
+    audioVader.play();
+  });
+  
+  $(".imgVader").mouseleave(function(){
+    audioVader.pause();
+      // audioVader.currentTime = 0;
+      // audioVader.load();
+  });
+
+}
+
+audioDarthVader();
+
+/*
+ * Barra navegadora. 
+*/
+
+posicionarMenu();
+
+$(window).scroll(function() {    
+    posicionarMenu();
+});
+
+function posicionarMenu() {
+    var altura_del_header = $('header').outerHeight(true);
+    var altura_del_menu = $('.nav').outerHeight(true);
+
+    if ($(window).scrollTop() >= altura_del_header){
+        $('.nav').addClass('fixed');
+        $('.section').css('margin-top', (altura_del_menu) + 'px');
+    } else {
+        $('.nav').removeClass('fixed');
+        $('.section').css('margin-top', '0');
+    }
 }

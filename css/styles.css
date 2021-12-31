@@ -68,7 +68,7 @@ header{
         height: 300px !important;
         margin: 15px !important;
     }
-    .btn.data{
+    .btn.about{
         width: 200px !important; 
         margin: 20px 70px !important;
     }
@@ -100,6 +100,7 @@ header{
     padding: 15px 20px !important;
     justify-content: space-evenly;
     list-style: none;
+    /* cursor: pointer; */
 }
 
 .section{
@@ -128,6 +129,8 @@ header{
 a{
     color: white; 
     text-decoration: none;
+
+    cursor: pointer;
 }
 
 .card {
@@ -239,10 +242,12 @@ footer{
 }
 
 .btn.send{
+    border: 3px solid #b1b1b1;
     background-color: #655CC9;
 }
 
 .btn.cancel{
+    border: 3px solid #b1b1b1;
     background-color: #808080;
     text-align: center;
 }
@@ -256,6 +261,11 @@ footer{
 
 .btn:active{
     transform: scale(.9);
+    border: 2px solid #4F4F4F;
+}
+
+.btn:hover{
+    transform: scale(.95);
     border: 2px solid #4F4F4F;
 }
 
@@ -317,7 +327,7 @@ span{
     margin: 10px;
 }
 
-.btn.data{
+.btn.about{
     background-color: #0145B2;
     font-family: monospace;
     width: 350px;
@@ -357,9 +367,16 @@ span{
 
     text-decoration: none;
     text-align: center;
-/* 
-    background: url(wallpapers/header.jpg) no-repeat center center fixed;
+
+    /*background: url(wallpapers/header.jpg) no-repeat center center fixed;
     background-size: cover; */
+}
+
+.btn.about:hover, .btn.contactEmail:hover, .btn.otherContacts:hover
+{
+    /*****Neon affect*****/
+    box-shadow: 0 2px 20px 0 #0145B2 inset, 0 2px 20px 0 #0145B2,
+                0 2px 20px 0 #0145B2 inset, 0 2px 20px 0 #0145B2;
 }
 
 .imgContact{
