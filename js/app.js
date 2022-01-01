@@ -84,7 +84,7 @@ function contactEmail(){
     title: "Email",
     html:
     `<img class="imgContact" src="./img/others/email 512px.png">
-    <form id="contact" action="https://formsubmit.co/saberparaque11@gmail.com" method="POST">
+    <form id="contact" action="https://formsubmit.co/carlossu02@protonmail.com" method="POST">
       <input autofocus id="n1" class="textBox" type="text" name="Nombre" placeholder="Nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$" required>
       <input class="textBox" type="email" name="email" placeholder="Correo Electrónico" autofocus pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$" required>
       <input class="textBox" type="text" name="Asunto" placeholder="Asunto" required>
