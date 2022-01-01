@@ -5,7 +5,5 @@
 <div>
 
 <div align="center">
-    <br><img src="https://64.media.tumblr.com/8e031c1e39f07c198ab2de34da458286/30c58b19501644e2-fd/s540x810/03c73aa4e4bd2b587a1221e16e4bc64e01924035.gifv">
+    <br><img src="https://64.media.tumblr.com/8e031c1e39f07c198ab2de34da458286/30c58b19501644e2-fd/s540x810/03c73aa4e4bd2b587a1221e16e4bc64e01924035.gif">
 <div>
-
-![image](https://64.media.tumblr.com/8e031c1e39f07c198ab2de34da458286/30c58b19501644e2-fd/s540x810/03c73aa4e4bd2b587a1221e16e4bc64e01924035.gifv)
