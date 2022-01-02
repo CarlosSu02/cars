@@ -69,7 +69,7 @@ function about(){
     html: `<p>Esta pequeña página ha sido creada desde 0 con estructuras HTML, 
               CSS e inserción de HTML con JavaScript para facilitar el ingreso
               de los datos a las cartas, estas cartas contienen información
-              general sobre una serie de carros dichos carros contienen su
+              general sobre una serie de carros, dichos carros contienen su
               imagen de representación.
               <br><br>*-Contenido de Star Wars añadido de forma extra...</p>`,
     confirmButtonText: "Aceptar"      
