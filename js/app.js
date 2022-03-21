@@ -26,7 +26,8 @@ var cars = new Array(
   {image: "./img/cars/rav41998.jpg", mark: "Toyota", model: "Rav4", year: "1998", version: "Normal", iconMark:"./img/iconCars/Toyota 512px.png", linkImage:"https://www.youtube.com/watch?v=2bdYu7W6qfY"}, 
   {image: "./img/cars/protege2001.jpg", mark: "Mazda", model: "Protege", year: "2001", version: "Normal", iconMark:"./img/iconCars/Mazda 512px.png", linkImage:"https://www.carrosguatemala.com/anuncios/usados-mazda-protege-2001-guatemala/"}, 
   {image: "./img/cars/corolla2002s.png", mark: "Toyota", model: "Corolla", year: "2002", version: "S", iconMark:"./img/iconCars/Toyota 512px.png", linkImage:"https://www.youtube.com/watch?v=I4E5wGgcvV4"}, 
-  {image: "./img/cars/hardbody1993.jpg", mark: "Nissan", model: "Hardbody", year: "1993", version: "Normal", iconMark:"./img/iconCars/Nissan 512px.png", linkImage:"https://i.redd.it/6w7b5kz5fnr31.jpg"});
+  {image: "./img/cars/hardbody1993.jpg", mark: "Nissan", model: "Hardbody", year: "1993", version: "Normal", iconMark:"./img/iconCars/Nissan 512px.png", linkImage:"https://i.redd.it/6w7b5kz5fnr31.jpg"},
+  {image: "./img/cars/ffocus2009.jpg", mark: "Ford", model: "Focus", year: "2009", version: "Normal", iconMark:"./img/iconCars/Ford 512px.png", linkImage:"http://neo-drive.com/pic/get"});
 
 /*
  * Datos e imágenes de los carros. 
